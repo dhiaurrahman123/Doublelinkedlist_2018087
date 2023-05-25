@@ -16,7 +16,12 @@ private:
     Node* START;
 public:
     DoubleLinkedList();
-
+    void addNote();
+    void search(int rolNo, Node** previous, Node** current);
+    bool deleteNode(int rollNo);
+    bool listEmpty();
+    void ascending();
+    void descending();
 };
 
 int main()
