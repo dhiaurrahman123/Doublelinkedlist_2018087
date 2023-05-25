@@ -22,6 +22,8 @@ public:
     bool listEmpty();
     void ascending();
     void descending();
+    void hapus();
+    void searchData();
 };
 DoubleLinkedList::DoubleLinkedList() {
     START = NULL;
@@ -105,9 +107,30 @@ void DoubleLinkedList::descending() {
     if (listEmpty())
         cout << "\nList is empty" << endl;
     else {
-        cout<<"\nRecords in descending order of roll number are"
+        cout << "\nRecords in descending order of roll number are:" << endl;
+        Node* currentNode = START;
+        while (currentNode->next != NULL)
+            currentNode = currentNode->next;
+        while (currentNode != NULL) {
+            cout << currentNode->noMhs << " " << currentNode->name << endl;
+            currentNode = currentNode->prev;
+        }
     }
 }
+void DoubleLinkedList::hapus(){
+    if (listEmpty()) {
+        cout << "\nList is epmty" << endl;
+    }
+    cout << "\Enter the roll number of the student whose record is to be deleted:";
+    int rollNo;
+    cin >> rollNo;
+    cout << endl;
+    if (DoubleLinkedList::deleteNode(rollNo) == false)
+        cout << "Record not found" << endl;
+    else
+        cout << "Record with roll number" << rollNo << "Deleted" << endl;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
