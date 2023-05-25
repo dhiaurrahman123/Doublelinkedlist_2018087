@@ -134,10 +134,27 @@ void DoubleLinkedList::searchData() {
     if (listEmpty() == true) {
         cout << "\nList is empty " << endl;
    }
+    Node* prev, * curr;
+    prev = curr = NULL;
+    cout << "\nEnter the roll number of the student whose record you want to search : ";
+    int num;
+    cin >> num;
+    if (DoubleLinkedList::search(num, &prev, &curr) == false)
+        cout << "\nRecord not found" << endl;
+    else {
+        cout << "\nRecord found" << endl;
+        cout << "\nRoll number" << curr->noMhs << endl;
+        cout << "\nName" << curr->name << endl;
+    }
 }
 int main()
 {
-    std::cout << "Hello World!\n";
+    DoubleLinkedList obj;
+    while (true) {
+        try {
+            cout << "\nMenu" << endl;
+        }
+    }
 }
 
 //he future, to open this project again, go to File > Open > Project and select the .sln file
