@@ -23,7 +23,9 @@ public:
     void ascending();
     void descending();
 };
-
+DoubleLinkedList::DoubleLinkedList() {
+    START = NULL;
+}
 int main()
 {
     std::cout << "Hello World!\n";
