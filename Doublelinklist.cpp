@@ -16,7 +16,7 @@ private:
     Node* START;
 public:
     DoubleLinkedList();
-    void addNote();
+    void addNode();
     void search(int rolNo, Node** previous, Node** current);
     bool deleteNode(int rollNo);
     bool listEmpty();
@@ -27,7 +27,9 @@ DoubleLinkedList::DoubleLinkedList() {
     START = NULL;
 }
 void DoubleLinkedList::addNode(){
-    
+    int nim;
+    string nim;
+    cout << "/nEnter the roll number of the student: ";
 }
 int main()
 {
