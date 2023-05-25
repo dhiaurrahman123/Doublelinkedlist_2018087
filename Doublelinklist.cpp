@@ -36,7 +36,7 @@ void DoubleLinkedList::addNode(){
     getline(cin, nm);
     Node* newNode = new Node();
     newNode->noMhs = nim;
-
+    newNode->name = nm;
 }
 int main()
 {
