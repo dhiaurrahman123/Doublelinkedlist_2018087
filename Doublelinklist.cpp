@@ -153,8 +153,17 @@ int main()
     while (true) {
         try {
             cout << "\nMenu" << endl;
-        }
-    }
-}
+            cout << "1. Add a record to the list" << endl;
+            cout << "2. Delete a record from the list" << endl;
+            cout << "3. View all records in the ascending of roll numbers " << endl;
+            cout << "4. View all records in the descending order of roll numbers " << endl;
+            cout << "5. Search for a record in the list " << endl;
+            cout << "6. Exit " << endl;
+            cout << "\nEnter your choice(1-6): " << endl;
+            char ch;
+            cin >> ch;
 
-//he future, to open this project again, go to File > Open > Project and select the .sln file
+        switch
+        }
+     }
+}
