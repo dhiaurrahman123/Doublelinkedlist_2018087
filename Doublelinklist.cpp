@@ -89,6 +89,25 @@ bool DoubleLinkList::deleteNode(int rollNo) {
 bool DoubleLinkedList::listEmpty() {
     return (START == NULL);
 }
+void DoubleLinkedList::ascending() {
+    if (listEmpty())
+        cout << "\nList is empty" << endl;
+    else {
+        cout << "\Records in ascending order of roll number are:" << endl;
+        Node* currentNode = START;
+        while (currentNode != NULL) {
+            cout << currentNode->noMhs << " " << currentNode->name << endl;
+            currentNode = currentNode->next;
+        }
+    }
+}
+void DoubleLinkedList::descending() {
+    if (listEmpty())
+        cout << "\nList is empty" << endl;
+    else {
+        cout<<"\nRecords in descending order of roll number are"
+    }
+}
 int main()
 {
     std::cout << "Hello World!\n";
